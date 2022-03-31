@@ -1,0 +1,9 @@
+<h1>Books#index</h1>
+<p>Find me in app/views/books/index.html.erb</p>
+<% @books.each do |book| %>
+    <div><%= book.user.id %></div>
+    <div><%= book.user.email %></div>
+    <div><%= book.id %></div>
+    <div><%= book.title %></div>
+    <div><%= book.body %></div>
+<% end %>
