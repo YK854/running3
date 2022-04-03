@@ -6,4 +6,6 @@
     <div><%= book.id %></div>
     <div><%= book.title %></div>
     <div><%= book.body %></div>
+    <div><%= link_to '詳細へ', book_path(book.id) %></div>
+    <div><%= link_to '削除', book_path(book.id), method: :delete %></div>
 <% end %>
